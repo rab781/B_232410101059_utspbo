@@ -1,0 +1,22 @@
+// Database
+create table admin (
+	id serial PRIMARY key,
+	username VARCHAR(20) NOT NULL,
+	password VARCHAR(20) NOT NULL
+);
+
+create table pengguna (
+	id serial PRIMARY key,
+	username VARCHAR(20) NOT NULL,
+	password VARCHAR(20) NOT NULL
+);
+
+create table tugas (
+	id serial PRIMARY KEY,
+	judul varchar(20) NOT NULL,
+	deskripsi VARCHAR(20) NOT null,
+	deadline date NOT NULL
+);
+
+// akun admin 
+INSERT into admin (username,password) VALUES ('raihan','123')
